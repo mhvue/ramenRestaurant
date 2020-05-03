@@ -1,6 +1,8 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
+
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,61 +10,156 @@
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
             integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
         <link rel="stylesheet" href="assets/style.css">
-        <script src="https://code.jquery.com/jquery-3.4.1.js" integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU="
-        crossorigin="anonymous"></script>
+        <script src="https://code.jquery.com/jquery-3.4.1.js"
+            integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU=" crossorigin="anonymous"></script>
     </head>
+
 <body>
+    <nav class="navbar navbar-light bg-light">
+        <form class="form-inline">
+            <button class="btn btn-outline-info" type="button">
+                <a href="./index.html">Home
+            </button>
+            <button class="btn btn-outline-success" id ="contactBtn" type="button">Contact</button>
+            <button class="btn btn-outline-success" type="button">
+                <a href="./order.html">Order Now</a>
+            </button>
+        </form>
+    </nav>
+    <div class="container">
 
-<div class="container">
+        <div class="jumbotron">
+            <header>
+                <h1>Ramen Restaurant</h1>
+            </header>
+            <p class="lead">Order up!</p>
+            <hr class="my-4">
+          </div>
 
-    <table class="table">
-        <thead>
-          <tr>
-            <th scope="col">#</th>
-            <th scope="col">Item Name</th>
-            <th scope="col">Description</th>
-            <th scope="col">Cost</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr>
-            <th scope="row">1</th>
-            <td>Popular Ramen</td>
-            <td>Otto</td>
-            <td>@mdo</td>
-          </tr>
-          <tr>
-            <th scope="row">2</th>
-            <td>Spicy Ramen</td>
-            <td>Thornton</td>
-            <td>@fat</td>
-          </tr>
-          <tr>
-            <th scope="row">3</th>
-            <td>Miso Ramen</td>
-            <td>the Bird</td>
-            <td>@twitter</td>
-          </tr>
-          <tr>
-              <th scope="row">4</th>
-              <td>House Special Ramen</td>
-              <td>info here</td>
-              <td>info here</td>
-          </tr>
-          <tr>
-              <th scope="row">5</th>
-              <td>Very Special Ramen</td>
-              <td>info here</td>
-              <td>info here</td>
-          </tr>
-        </tbody>
-      </table>
+        <table class="table">
+            <thead>
+                <tr>
+                    <th scope="col">#</th>
+                    <th scope="col">Item Name</th>
+                    <th scrop="col">Image</th>
+                    <th scope="col">Description</th>
+                    <th scope="col">Cost</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <th scope="row">1</th>
+                    <td>Popular Ramen</td>
+                    <td>
+                        <img src="assets/images/ramen1.jpg" class="img-fluid">
+                    </td>
+                    <td>
+                        <p>
+                            Aliquam erat volutpat.
+                            Nulla urna ligula,
+                            bibendum eu vulputate nec,
+                            sollicitudin in arcu. Maecenas
+                            hendrerit aliquet neque, cursus
+                            rhoncus lacus dignissim quis. 
+                            Maecenas condi
+                        </p>
+                    </td>
+                    <td>$12.99</td>
+                </tr>
+                <tr>
+                    <th scope="row">2</th>
+                    <td>Spicy Ramen</td>
+                    <td>
+                        <img src="assets/images/ramen2.jpg" class="img-fluid">
+                    </td>
+                    <td> 
+                        Aliquam erat volutpat.
+                        Nulla urna ligula,
+                        bibendum eu vulputate nec,
+                        sollicitudin in arcu. Maecenas
+                        hendrerit aliquet neque, cursus
+                        rhoncus lacus dignissim quis. 
+                        Maecenas condi
+                    </td>
+                    <td>$13.99</td>
+                </tr>
+                <tr>
+                    <th scope="row">3</th>
+                    <td>Miso Ramen</td>
+                    <td>
+                        <img src="assets/images/ramen3.jpg" class="img-fluid">
+                    </td>
+                    <td> Aliquam erat volutpat.
+                        Nulla urna ligula,
+                        bibendum eu vulputate nec,
+                        sollicitudin in arcu. Maecenas
+                        hendrerit aliquet neque, cursus
+                        rhoncus lacus dignissim quis. 
+                        Maecenas condi</td>
+                    <td>$13.99</td>
+                </tr>
+                <tr>
+                    <th scope="row">4</th>
+                    <td>House Special Ramen</td>
+                    <td>
+                        <img src="assets/images/ramen4.jpg" class="img-fluid">
+                    </td>
+                    <td> Aliquam erat volutpat.
+                        Nulla urna ligula,
+                        bibendum eu vulputate nec,
+                        sollicitudin in arcu. Maecenas
+                        hendrerit aliquet neque, cursus
+                        rhoncus lacus dignissim quis. 
+                        Maecenas condi</td>
+                    <td>$11.99</td>
+                </tr>
+                <tr>
+                    <th scope="row">5</th>
+                    <td>Very Special Ramen</td>
+                    <td>
+                        <img src="assets/images/ramen5.jpg" class="img-fluid">
+                    </td>
+                    <td> Aliquam erat volutpat.
+                        Nulla urna ligula,
+                        bibendum eu vulputate nec,
+                        sollicitudin in arcu. Maecenas
+                        hendrerit aliquet neque, cursus
+                        rhoncus lacus dignissim quis. 
+                        Maecenas condi</td>
+                    <td>$12.99</td>
+                </tr>
+            </tbody>
+        </table>
+
+    <!-- contact us -->
+    <div class="modal" id="contactModal" tabindex="-1" role="dialog">
+        <div class="modal-dialog" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title">Questions?</h5>
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="modal-body">
+              <p>Call us: 123-456-6789</p>
+              <p>Email us: 
+                  <a href="#">Email@email.com</a></p>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+              <button type="button" class="btn btn-primary">Save changes</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
 
 
-
-
-
-</div>
-    
+    <footer>Copyright 2020. All Rights Reserved</footer>
+<script src="js/app.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
 </body>
+
 </html>
