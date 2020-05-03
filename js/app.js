@@ -1,4 +1,4 @@
 $("#contactBtn").on("click", function(){
-    console.log("click");
+    $("#contactModal").modal("toggle");
 
 })
