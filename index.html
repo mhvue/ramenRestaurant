@@ -7,22 +7,31 @@
     <title>Ramen Restaurant</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
         integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
-    <link rel="stylesheet" href="assets/style.css" ; </head>
+    <link rel="stylesheet" href="assets/style.css">
+    <script src="https://code.jquery.com/jquery-3.4.1.js" integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU="
+    crossorigin="anonymous"></script>
+</head>
 
 <body>
     <nav class="navbar navbar-light bg-light">
         <form class="form-inline">
-            <button class="btn btn-outline-info" type="button">Home</button>
-            <button class="btn btn-outline-success" type="button">Contact</button>
-            <button class="btn btn-outline-success" type="button">Order Now</button>
+            <button class="btn btn-outline-info" type="button" href="#">Home</button>
+            <button class="btn btn-outline-success" id ="contactBtn" type="button">Contact</button>
+            <button class="btn btn-outline-success" type="button" href="#">Order Now</button>
         </form>
     </nav>
 
     <div class="container">
-        <header>
-            <h1>Ramen Restaurant</h1>
-        </header>
-        <h2>About</h2>
+       
+    
+        <div class="jumbotron">
+            <header>
+                <h1>Ramen Restaurant</h1>
+            </header>
+            <p class="lead">"But First...Ramen"</p>
+            <hr class="my-4">
+          </div>
+          <h2>About</h2>
         <p>
             Lorem ipsum dolor sit amet, consectetur adipiscing elit.
             Maecenas elementum, est eget porttitor lacinia, massa nunc sodales lorem,
@@ -37,29 +46,11 @@
         <div class="container">
             <div class="row">
                 <div class="col-md-6">
-                    <h3>Menu</h3>
-                    n rutrum est eu iaculis cursus. Aliquam eget consectetur nisi.
-                    Sed egestas ex nec ante eleifend mattis. Suspendisse vitae imperdiet felis.
-                    Aliquam erat volutpat. Ut libero tortor, imperdiet eget mattis at, rhoncus id
-                    lacus. Vivamus et felis scelerisque, dictum ex vel, eleifend elit. Aliquam a
-                    euismod leo, nec tincidunt ante. Mauris semper tortor ac sem molestie, aliquet
-                    lobortis tellus molestie. Ut nec ipsum vitae leo lobortis tempus. Fusce ex diam,
-                    malesuada sed nisl id, fermentum fringilla ex. Donec scelerisque non ipsum sit
-                    amet pellentesque.
-                    <br><br>
-                    Morbi id nisi pharetra, blandit metus ac, auctor metus. Mauris cursus, lacus in luctus
-                    semper, quam odio euismod tellus, quis congue dui orci vitae turpis. Donec tristique,
-                    risus quis placerat commodo, nisl purus auctor arcu, et scelerisque libero ex a neque.
-                    Donec feugiat vestibulum ultricies. In consequat nec nulla quis finibus. Curabitur vehicula
-                    enim vestibulum molestie placerat. Pellentesque suscipit congue velit, nec imperdiet erat
-                    ornare nec. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere c
-                    ubilia curae; Morbi odio lectus, convallis vel enim non, aliquam pretium tortor.
-                    Vivamus et commodo nibh. Nunc a tellus volutpat, tincidunt magna et, blandit nisl.
-                    In in finibus sapien. Ut id pretium neque
+                   <img src="./assets/images/ramenbowl.jpg" class="img-responsive">
 
                 </div>
                 <div class="col-md-6">
-                    <h3>Pictures</h3>
+                    <h3>Why Ramen?</h3>
                     n rutrum est eu iaculis cursus. Aliquam eget consectetur nisi.
                     Sed egestas ex nec ante eleifend mattis. Suspendisse vitae imperdiet felis.
                     Aliquam erat volutpat. Ut libero tortor, imperdiet eget mattis at, rhoncus id
@@ -75,21 +66,34 @@
         </div>
 
 
-
-
-
-
-
-
-
-
-
-
-
-
     </div>
 
+<!-- contact us -->
+    <div class="modal" tabindex="-1" role="dialog">
+        <div class="modal-dialog" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title">Modal title</h5>
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="modal-body">
+              <p>Modal body text goes here.</p>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+              <button type="button" class="btn btn-primary">Save changes</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
     <footer>Copyright 2020. All Rights Reserved</footer>
+
+<script src="js/app.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
 </body>
 
 </html>
