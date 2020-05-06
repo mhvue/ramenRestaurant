@@ -22,11 +22,19 @@ h2{
     margin-bottom: 20px;
 } 
 
-h1, .lead{
+h1{
     color: white;
     text-align: right;
 }
 
 button{
     margin-right: 5px;
+}
+h3{
+    text-align: center;
+}
+.orderHolder{
+    border-left: solid 1px;
+    margin-bottom: 20px;
+    
 }

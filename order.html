@@ -2,8 +2,6 @@
 <html lang="en">
 
 <head>
-
-    <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Order</title>
@@ -27,15 +25,17 @@
         </form>
     </nav>
     <div class="container">
-
-        <div class="jumbotron">
+         <div class="jumbotron">
             <header>
                 <h1>Ramen Restaurant</h1>
             </header>
-            <p class="lead">Order up!</p>
             <hr class="my-4">
-          </div>
+        </div>
 
+          <h3>Menu</h3>
+        <div class="row">
+            <div class="col-md-10">
+      
         <table class="table">
             <thead>
                 <tr>
@@ -50,7 +50,7 @@
             <tbody>
                 <tr>
                     <th scope="row">1</th>
-                    <td>Popular Ramen</td>
+                    <td class="name">Popular Ramen</td>
                     <td>
                         <img src="assets/images/ramen1.jpg" class="img-fluid">
                     </td>
@@ -65,8 +65,8 @@
                             Maecenas condi
                         </p>
                     </td>
-                    <td>$12.99</td>
-                    <td><button>Order</button></td>
+                    <td id="price">$12.99</td>
+                    <td id="btnData"><button class="orderBtn" id="orderOne">Order</button></td>
                 </tr>
                 <tr>
                     <th scope="row">2</th>
@@ -84,7 +84,7 @@
                         Maecenas condi
                     </td>
                     <td>$13.99</td>
-                    <td><button>Order</button></td>
+                    <td><button class="orderBtn" id="orderTwo">Order</button></td>
                 </tr>
                 <tr>
                     <th scope="row">3</th>
@@ -100,7 +100,7 @@
                         rhoncus lacus dignissim quis. 
                         Maecenas condi</td>
                     <td>$13.99</td>
-                    <td><button>Order</button></td>
+                    <td><button class="orderBtn" id="orderThree">Order</button></td>
                 </tr>
                 <tr>
                     <th scope="row">4</th>
@@ -116,7 +116,7 @@
                         rhoncus lacus dignissim quis. 
                         Maecenas condi</td>
                     <td>$11.99</td>
-                    <td><button>Order</button></td>
+                    <td><button class="orderBtn" id="orderFour">Order</button></td>
                 </tr>
                 <tr>
                     <th scope="row">5</th>
@@ -132,34 +132,39 @@
                         rhoncus lacus dignissim quis. 
                         Maecenas condi</td>
                     <td>$12.99</td>
-                    <td><button>Order</button></td>
+                    <td><button class="orderBtn" id="orderFive">Order</button></td>
                 </tr>
             </tbody>
         </table>
-
-    <!-- contact us -->
-    <div class="modal" id="contactModal" tabindex="-1" role="dialog">
-        <div class="modal-dialog" role="document">
-          <div class="modal-content">
-            <div class="modal-header">
-              <h5 class="modal-title">Questions?</h5>
-              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                <span aria-hidden="true">&times;</span>
-              </button>
-            </div>
-            <div class="modal-body">
-              <p>Call us: 123-456-6789</p>
-              <p>Email us: 
-                  <a href="#">Email@email.com</a></p>
-            </div>
-            <div class="modal-footer">
-              <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-              <button type="button" class="btn btn-primary">Save changes</button>
-            </div>
-          </div>
+    </div>
+    
+    <div class="col-md-2 orderHolder">
+        <h3>Yor Order Here</h3>
+    </div>
+</div>
+</div>
+  <!-- contact us -->
+  <div class="modal" id="contactModal" tabindex="-1" role="dialog">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title">Questions?</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <p>Call us: 123-456-6789</p>
+          <p>Email us: 
+              <a href="#">Email@email.com</a></p>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+          <button type="button" class="btn btn-primary">Save changes</button>
         </div>
       </div>
     </div>
+  </div>
 
 
     <footer>Copyright 2020. All Rights Reserved</footer>
