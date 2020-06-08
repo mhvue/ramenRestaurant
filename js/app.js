@@ -13,7 +13,7 @@ const ramenMenu = {
     ramenFive: ["5", "Normal Ramen", "pic", "afjakakjal", 12.99],
 }
 
-for (let i = 0; i < 10; i++) {
+for (let i = 0; i < 5; i++) {
 
     const menuRow =
         $("#dataRow1").append(
@@ -34,7 +34,7 @@ for (let i = 0; i < 10; i++) {
     const menuRowFive=
     $("#dataRow5").append(
         $("<td>").text(ramenMenu.ramenFive[i])
-    )
+        )
 
 
     $(".menuTable").append(menuRow, menuRowTwo, menuRowThree, menuRowFour, menuRowFive);
