@@ -43,11 +43,11 @@ for (let i = 0; i < 6; i++) {
 
 //make it so each button's value is grabbed individually to orderHolder
 $("button").on("click", function () {
-    //console.log("click")
-    //console.log(this)
-    const getInfo = $(this).attr("id")
-    $(".modal-body").append("<br>").append( getInfo)
+    const getInfo = $(this).attr("id");
+    $(".modal-body").append("<br>").append( getInfo);
     $("#orderModal").modal("toggle");
     console.log(getInfo)
   
 });
+
+//need to add in the ability to add cost of menu item(s) and total it in the modal 
