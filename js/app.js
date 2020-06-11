@@ -41,12 +41,14 @@ for (let i = 0; i < 6; i++) {
 }
 
 
-//make it so each button's value is grabbed individually to orderHolder
 $("button").on("click", function () {
     const getInfo = $(this).attr("id");
     const getPrice= $(this).parent().parent().find("p").text()
-    console.log(getPrice)
+    const total = 0;
+    console.log(total)
     $(".modal-body").append("<br>").append(getInfo, "-", getPrice);
+    $("#totalHere").append(total + parseInt(getPrice));
+    console.log(total + parseInt(getPrice))
     $("#orderModal").modal("toggle");
     
   

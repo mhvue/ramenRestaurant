@@ -33,8 +33,8 @@ button{
 h3{
     text-align: center;
 }
-.orderHolder{
-    border-left: solid 1px;
-    margin-bottom: 20px;
-    
+
+#totalHere{
+    position: absolute;
+    left: 10px;
 }
