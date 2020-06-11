@@ -6,11 +6,11 @@ $("#contactBtn").on("click", function () {
 
 
 const ramenMenu = {
-    ramenOne: ["1", "Miso Ramen", "pic", "afjakakjal","<p id='price1'> 12.99 </p>", "<button id= '1'>Order</button>"],
-    ramenTwo: ["2", "Spicy Ramen", "pic", "afjakakjal", "<p id='price2'> 13.99 </p>", "<button id= '2'>Order</button>"],
-    ramenThree: ["3", "House Ramen", "pic", "afjakakjal", "<p id='price3'> 14.99 </p>", "<button id= '3'>Order</button>"],
-    ramenFour: ["4", "Supreme Ramen", "pic", "afjakakjal","<p id='price4'> 12.99 </p>", "<button id= '4'>Order</button>"],
-    ramenFive: ["5", "Normal Ramen", "pic", "afjakakjal", "<p id='price5'> 11.99 </p>", "<button id= '5'>Order</button>"]
+    ramenOne: ["1", "Miso Ramen", "pic", "afjakakjal","<p id='price1'> 12.99 </p>", "<button class='orderBtn' id= '1'>Order</button>"],
+    ramenTwo: ["2", "Spicy Ramen", "pic", "afjakakjal", "<p id='price2'> 13.99 </p>", "<button class='orderBtn'  id= '2'>Order</button>"],
+    ramenThree: ["3", "House Ramen", "pic", "afjakakjal", "<p id='price3'> 14.99 </p>", "<button class='orderBtn'  id= '3'>Order</button>"],
+    ramenFour: ["4", "Supreme Ramen", "pic", "afjakakjal","<p id='price4'> 12.99 </p>", "<button class='orderBtn' id= '4'>Order</button>"],
+    ramenFive: ["5", "Normal Ramen", "pic", "afjakakjal", "<p id='price5'> 11.99 </p>", "<button class='orderBtn' id= '5'>Order</button>"]
 }
 
 for (let i = 0; i < 6; i++) {
@@ -41,7 +41,7 @@ for (let i = 0; i < 6; i++) {
 }
 
 
-$("button").on("click", function () {
+$(".orderBtn").on("click", function () {
     const getInfo = $(this).attr("id");
     const getPrice= $(this).parent().parent().find("p").text()
     const total = 0;
