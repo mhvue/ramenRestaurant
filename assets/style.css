@@ -17,10 +17,14 @@ h2{
   
  } 
 
- img{
+#mainPic{
     width: 500px;
     margin-bottom: 20px;
 } 
+
+img{
+    width: 200px;
+}
 
 h1{
     color: white;
