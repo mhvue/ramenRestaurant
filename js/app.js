@@ -45,24 +45,17 @@ let total;
 $(".orderBtn").on("click", function () {
     const getInfo = $(this).attr("id");
     const getPrice= $(this).parent().parent().find("p").text()
-    
-  
     $(".modal-body").append("<br>").append(getInfo, "-", getPrice);
-   
     priceArr.push(parseInt(getPrice))
-    console.log(priceArr)
 
-
+//credit below to https://www.tutorialrepublic.com/faq/how-to-find-the-sum-of-an-array-of-numbers-in-javascript.php
     total = priceArr.reduce(function(a, b){
         return a + b;
     },0);
 
-
     $("#totalHere").html(total)
     $("#orderModal").modal("toggle");
     
-  
 });
 
 
-//need to add in the ability to add cost of menu item(s) and total it in the modal 
