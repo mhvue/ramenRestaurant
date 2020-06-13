@@ -10,10 +10,11 @@
     <link rel="stylesheet" href="assets/style.css">
     <script src="https://code.jquery.com/jquery-3.4.1.js" integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU="
     crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Neucha&family=Ubuntu&display=swap" rel="stylesheet">
 </head>
 
 <body>
-    <nav class="navbar navbar-light bg-light">
+    <nav class="navbar navbar-light bg-dark">
         <form class="form-inline">
             <button class="btn btn-outline-info" type="button" href="#">Home</button>
             <button class="btn btn-outline-success" id ="contactBtn" type="button">Contact</button>
@@ -23,15 +24,23 @@
         </form>
     </nav>
 
+    <div class="jumbotron">
+      <header>
+          <h1>Ramen Restaurant</h1>
+      </header>
+      <p class="lead">"But First...Ramen"</p>
+      <hr class="my-4">
+    </div>
     <div class="container">
-        <div class="jumbotron">
+        <!-- <div class="jumbotron">
             <header>
                 <h1>Ramen Restaurant</h1>
             </header>
             <p class="lead">"But First...Ramen"</p>
             <hr class="my-4">
-          </div>
-          <h2>About Us</h2>
+          </div> -->
+          <div id="mainInfo">
+          <h2>Our Story </h2>
         <p>
             Lorem ipsum dolor sit amet, consectetur adipiscing elit.
             Maecenas elementum, est eget porttitor lacinia, massa nunc sodales lorem,
@@ -40,16 +49,18 @@
             tortor volutpat pretium. Etiam lacinia quam vitae enim fermentum, a feugiat
             tellus tincidunt. Integer efficitur venenatis tellus et fringilla.
             Suspendisse molestie sodales est sit amet convallis. Proin aliquam posuere accumsan.
-
         </p>
 
+          </div>
+          <br>
         <div class="container">
             <div class="row">
                 <div class="col-md-6">
                    <img id ="mainPic" src="./assets/images/ramenbowl.jpg" class="img-responsive">
-
                 </div>
-                <div class="col-md-6">
+              
+                <div class="col-md-6 infoContainer">
+                  <br>
                     <h3>Why we love ramen</h3>
                     n rutrum est eu iaculis cursus. Aliquam eget consectetur nisi.
                     Sed egestas ex nec ante eleifend mattis. Suspendisse vitae imperdiet felis.
@@ -59,12 +70,11 @@
                     lobortis tellus molestie. Ut nec ipsum vitae leo lobortis tempus. Fusce ex diam,
                     malesuada sed nisl id, fermentum fringilla ex. Donec scelerisque non ipsum sit
                     amet pellentesque.
-
                 </div>
-
+            
             </div>
         </div>
-
+        <br>
 
     </div>
 

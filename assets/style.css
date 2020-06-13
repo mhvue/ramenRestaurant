@@ -1,9 +1,21 @@
+body{
+    background-image: url("./images/ramenBackground.jpg");
+     background-attachment: fixed; 
+     background-size: 50%;
+     /* background-repeat: no-repeat; */
+     /* background-color: #183556;  */
+}
+
 footer{
     padding: 10px 20px;
     background: #666;
     color: white;
     text-align: center;
-    }
+}
+
+h1{
+    font-size: 55px;
+}
 
 h2{
     text-align: center;
@@ -11,16 +23,29 @@ h2{
 
 .jumbotron{
     background-image:url("./images/city1.jpg");
-     background-repeat: no-repeat;
+    background-repeat: no-repeat;
     background-size: 100%;
     height: auto;
-  
+    font-family: 'Neucha', cursive;
  } 
 
-#mainPic{
+#mainPic, #infoContainer{
     width: 500px;
     margin-bottom: 20px;
 } 
+
+#mainInfo{
+    background-color:white;
+    font-family: 'Ubuntu', sans-serif;
+    padding: 10px;
+}
+
+.infoContainer{
+    background-color: #e77a25;
+    margin-bottom: 20px;
+    font-family: 'Ubuntu', sans-serif;
+}
+
 
 img{
     width: 200px;
@@ -41,4 +66,32 @@ h3{
 #totalHere{
     position: absolute;
     left: 10px;
+}
+
+.lead{
+    text-align:right;
+    margin-right: 50px;
+    color: white;
+    text-shadow:1px 1px yellow;
+    font-family: 'Ubuntu', sans-serif;
+}
+.lead2{
+    text-align:right;
+    margin-right: 30px;
+    font-size: 20px;
+    color: white;
+    text-shadow:1px 1px pink;
+    font-family: 'Ubuntu', sans-serif;
+}
+#menuHeader,td, th{
+    font-family: 'Ubuntu', sans-serif;
+}
+
+#menuHeader{
+    background-color:white;
+    padding: 15px;
+}
+
+.menuTable{
+    background-color: #e77a25;
 }
