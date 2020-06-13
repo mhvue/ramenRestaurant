@@ -17,7 +17,7 @@ for (let i = 0; i < 6; i++) {
 
     const menuRow =
         $("#dataRow1").append(
-            $("<td>").html(ramenMenu.ramenOne[i])
+            $("<td>").append(ramenMenu.ramenOne[i])
         )
     const menuRowTwo =
         $("#dataRow2").append(

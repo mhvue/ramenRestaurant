@@ -45,8 +45,27 @@ h2{
     margin-bottom: 20px;
     font-family: 'Ubuntu', sans-serif;
 }
+.homeBtn, .contactBtn, .orderNav {
+    color: white;
+    border: 1px solid white;
+}
+
+a {
+    color: white;
+}
+
+a:hover {
+    color: black;
+    text-decoration: none;
+}
+.homeBtn:hover, .contactBtn:hover, .orderNav:hover{
+    background-color: #e77a25;
+    color: black;
+}
 
 
+
+/* ramenImg */
 img{
     width: 200px;
 }

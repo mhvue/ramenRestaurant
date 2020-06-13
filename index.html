@@ -2,109 +2,104 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ramen Restaurant</title>
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
-        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
-    <link rel="stylesheet" href="assets/style.css">
-    <script src="https://code.jquery.com/jquery-3.4.1.js" integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU="
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ramen Restaurant</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+    integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+  <link rel="stylesheet" href="assets/style.css">
+  <script src="https://code.jquery.com/jquery-3.4.1.js" integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU="
     crossorigin="anonymous"></script>
-    <link href="https://fonts.googleapis.com/css2?family=Neucha&family=Ubuntu&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Neucha&family=Ubuntu&display=swap" rel="stylesheet">
 </head>
 
 <body>
-    <nav class="navbar navbar-light bg-dark">
-        <form class="form-inline">
-            <button class="btn btn-outline-info" type="button" href="#">Home</button>
-            <button class="btn btn-outline-success" id ="contactBtn" type="button">Contact</button>
-            <button class="btn btn-outline-success" type="button">
-                <a href="./order.html">Order Now</a>
-            </button>
-        </form>
-    </nav>
+  <nav class="navbar navbar-light bg-dark">
+    <form class="form-inline">
+      <button class="btn btn-outline-info homeBtn" type="button" href="/">Home</button>
+      <button class="btn btn-outline-success contactBtn" id="contactBtn" type="button">Contact</button>
+      <button class="btn btn-outline-success orderNav" type="button"><a href= "./order.html">Order</a></button>
+      </button>
+    </form>
+  </nav>
 
-    <div class="jumbotron">
-      <header>
-          <h1>Ramen Restaurant</h1>
-      </header>
-      <p class="lead">"But First...Ramen"</p>
-      <hr class="my-4">
+  <div class="jumbotron">
+    <header>
+      <h1>Ramen Restaurant</h1>
+    </header>
+    <p class="lead">"But First...Ramen"</p>
+    <hr class="my-4">
+  </div>
+  <div class="container">
+    <div id="mainInfo">
+      <h2>Our Story </h2>
+      <p>
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+        Maecenas elementum, est eget porttitor lacinia, massa nunc sodales lorem,
+        vel tincidunt ante sem et nunc. Quisque non viverra leo, ac elementum odio.
+        Duis eu dui id elit lobortis sagittis sit amet ac nulla. Duis varius mi eu
+        tortor volutpat pretium. Etiam lacinia quam vitae enim fermentum, a feugiat
+        tellus tincidunt. Integer efficitur venenatis tellus et fringilla.
+        Suspendisse molestie sodales est sit amet convallis. Proin aliquam posuere accumsan.
+      </p>
+
     </div>
+    <br>
     <div class="container">
-        <!-- <div class="jumbotron">
-            <header>
-                <h1>Ramen Restaurant</h1>
-            </header>
-            <p class="lead">"But First...Ramen"</p>
-            <hr class="my-4">
-          </div> -->
-          <div id="mainInfo">
-          <h2>Our Story </h2>
-        <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-            Maecenas elementum, est eget porttitor lacinia, massa nunc sodales lorem,
-            vel tincidunt ante sem et nunc. Quisque non viverra leo, ac elementum odio.
-            Duis eu dui id elit lobortis sagittis sit amet ac nulla. Duis varius mi eu
-            tortor volutpat pretium. Etiam lacinia quam vitae enim fermentum, a feugiat
-            tellus tincidunt. Integer efficitur venenatis tellus et fringilla.
-            Suspendisse molestie sodales est sit amet convallis. Proin aliquam posuere accumsan.
-        </p>
-
-          </div>
-          <br>
-        <div class="container">
-            <div class="row">
-                <div class="col-md-6">
-                   <img id ="mainPic" src="./assets/images/ramenbowl.jpg" class="img-responsive">
-                </div>
-              
-                <div class="col-md-6 infoContainer">
-                  <br>
-                    <h3>Why we love ramen</h3>
-                    n rutrum est eu iaculis cursus. Aliquam eget consectetur nisi.
-                    Sed egestas ex nec ante eleifend mattis. Suspendisse vitae imperdiet felis.
-                    Aliquam erat volutpat. Ut libero tortor, imperdiet eget mattis at, rhoncus id
-                    lacus. Vivamus et felis scelerisque, dictum ex vel, eleifend elit. Aliquam a
-                    euismod leo, nec tincidunt ante. Mauris semper tortor ac sem molestie, aliquet
-                    lobortis tellus molestie. Ut nec ipsum vitae leo lobortis tempus. Fusce ex diam,
-                    malesuada sed nisl id, fermentum fringilla ex. Donec scelerisque non ipsum sit
-                    amet pellentesque.
-                </div>
-            
-            </div>
+      <div class="row">
+        <div class="col-md-6">
+          <img id="mainPic" src="./assets/images/ramenbowl.jpg" class="img-responsive">
         </div>
-        <br>
 
+        <div class="col-md-6 infoContainer">
+          <br>
+          <h3>Why we love ramen</h3>
+          n rutrum est eu iaculis cursus. Aliquam eget consectetur nisi.
+          Sed egestas ex nec ante eleifend mattis. Suspendisse vitae imperdiet felis.
+          Aliquam erat volutpat. Ut libero tortor, imperdiet eget mattis at, rhoncus id
+          lacus. Vivamus et felis scelerisque, dictum ex vel, eleifend elit. Aliquam a
+          euismod leo, nec tincidunt ante. Mauris semper tortor ac sem molestie, aliquet
+          lobortis tellus molestie. Ut nec ipsum vitae leo lobortis tempus. Fusce ex diam,
+          malesuada sed nisl id, fermentum fringilla ex. Donec scelerisque non ipsum sit
+          amet pellentesque.
+        </div>
+
+      </div>
     </div>
+    <br>
 
-<!-- contact us -->
-    <div class="modal" id="contactModal" tabindex="-1" role="dialog">
-        <div class="modal-dialog" role="document">
-          <div class="modal-content">
-            <div class="modal-header">
-              <h5 class="modal-title">Questions?</h5>
-              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                <span aria-hidden="true">&times;</span>
-              </button>
-            </div>
-            <div class="modal-body">
-              <p>Call us: 123-456-6789</p>
-              <p>Email us: 
-                  <a href="#">Email@email.com</a></p>
-            </div>
-            <div class="modal-footer">
-              <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-            </div>
-          </div>
+  </div>
+
+  <!-- contact us -->
+  <div class="modal" id="contactModal" tabindex="-1" role="dialog">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title">Questions?</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <p>Call us: 123-456-6789</p>
+          <p>Email us:
+            <a href="#">Email@email.com</a></p>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
         </div>
       </div>
+    </div>
+  </div>
 
-    <footer>Copyright 2020. All Rights Reserved</footer>
-
-<script src="js/app.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
-<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+  <footer>Credit all pictures from Unsplash.com. || Copyright 2020. || All Rights Reserved</footer>
+  <script src="js/app.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+    integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+    crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+    integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+    crossorigin="anonymous"></script>
 </body>
 
 </html>
