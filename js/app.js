@@ -46,7 +46,7 @@ $(".orderBtn").on("click", function () {
     const getInfo = $(this).attr("id");
     const getPrice= $(this).parent().parent().find("p").text()
     $(".modal-body").append("<br>").append("#", getInfo, "-", getPrice);
-    priceArr.push(parseInt(getPrice))
+    priceArr.push(parseFloat(getPrice))
 
 //credit below to https://www.tutorialrepublic.com/faq/how-to-find-the-sum-of-an-array-of-numbers-in-javascript.php
     total = priceArr.reduce(function(a, b){
