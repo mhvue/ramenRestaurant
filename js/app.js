@@ -29,6 +29,8 @@ const ramenImg ={
     normal:  "<img src='./assets/images/ramen5.jpg' alt='ramen with red sauce'>"
 }
 
+
+
 const ramenInfo={
     miso: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
     spicy: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
@@ -93,8 +95,11 @@ const priceArr = []
 let total;
 $(".orderBtn").on("click", function () {
     const getInfo = $(this).attr("id");
+    console.log(getInfo)
     const getPrice= $(this).parent().parent().find("p").text()
-    $(".modal-body").append("<br>").append("#", getInfo, "-", getPrice);
+    // $(".modal-body").append("<br>").append("#", getInfo, "-", getPrice, "<button class='deleteOrder'+ id ='deleteBtn" + getInfo +"'>" + "X</button>", "<br>");
+    $(".modal-body").append("<br>").append("#", getInfo, "-", getPrice, "<button class='deleteOrder'+ id ='deleteBtn" + getInfo +"'>" + "X</button>", "<br>");
+
     priceArr.push(parseFloat(getPrice))
 
 //credit below to https://www.tutorialrepublic.com/faq/how-to-find-the-sum-of-an-array-of-numbers-in-javascript.php
@@ -104,7 +109,11 @@ $(".orderBtn").on("click", function () {
 
     $("#totalHere").html("Total: " + total)
     $("#orderModal").modal("toggle");
-    
+
+    //include option to clear the order  and/or delete an item ---still in progress---
+    $("#deleteBtn" + getInfo).on("click", function(){
+        $(".modal-body").remove("<p>");
+    })
 });
 
 

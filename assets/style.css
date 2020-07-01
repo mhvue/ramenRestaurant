@@ -125,3 +125,7 @@ h3{
 .menuTable{
     background-color: #e77a25;
 }
+
+.deleteOrder {
+    float: left;
+}
