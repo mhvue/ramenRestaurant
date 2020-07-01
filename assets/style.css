@@ -40,6 +40,10 @@ h2{
     padding: 10px;
 }
 
+/* #mainInfo:hover{
+    opacity: 0.5;
+} */
+
 .infoContainer{
     background-color: #e77a25;
     margin-bottom: 20px;
