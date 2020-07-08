@@ -4,15 +4,8 @@ $("#contactBtn").on("click", function () {
 
 });
 
-$("#ourStoryP").hide();
 
-$("#mainInfo").on("click", function(){
-    $("#ourStoryP").fadeIn("slow");
-    $("#ourStoryHeader").hide();
-});
-
-
-
+//on order.html
 const ramenName = {
     miso: "Miso Ramen",
     spicy: "Spicy Ramen",
@@ -96,25 +89,32 @@ let total;
 $(".orderBtn").on("click", function () {
     const getInfo = $(this).attr("id");
     const getPrice= $(this).parent().parent().find("p").text();
-        
-    $(".modal-body").append(
-        "<span id='selectedItem" + getInfo + "'" + ">" + "<br>" +"#" + getInfo + "-" + getPrice, 
-        "<button class='deleteOrder'+ id ='deleteBtn" + getInfo +"'>" + "X</button>");
 
-    priceArr.push(parseFloat(getPrice))
+    $(".modal-body").append(
+        "<span id='selectedItem" + getInfo + "'" + ">" + "<br>" +"#" + getInfo + "-" + getPrice).append( 
+        "<button class='deleteOrder' id ='deleteBtn" + getInfo +"'>" + "X</button>");
+        
+    // $(".modal-body").append(
+    //     "<span id='selectedItem" + getInfo + "'" + ">" + "<br>" +"#" + getInfo + "-" + getPrice, 
+    //     "<button class='deleteOrder'+ id ='deleteBtn" + getInfo +"'>" + "X</button>");
+
+    priceArr.push(parseFloat(getPrice));
 
 //credit below to https://www.tutorialrepublic.com/faq/how-to-find-the-sum-of-an-array-of-numbers-in-javascript.php
     total = priceArr.reduce(function(a, b){
         return a + b;
     },0);
 
-    $("#totalHere").html("Total: " + total)
+    $("#totalHere").html("Total: " + total);
     $("#orderModal").modal("toggle");
 
     //include option to clear the order  and/or delete an item ---still in progress---
     $("#deleteBtn" + getInfo).on("click", function(){
-        $("#selectedItem" + getInfo).remove();
-        $("#selectedItem" + getInfo).remove("#break");
+        console.log($(this))
+       // $("#"+getInfo).remove();
+
+         $("#selectedItem" + getInfo).remove();
+      // $("#selectedItem" + getInfo).remove("#break");
         $("#deleteBtn" + getInfo).remove();
         $("#totalHere").html("Total: ");
         priceArr = []

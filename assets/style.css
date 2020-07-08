@@ -24,7 +24,7 @@ h2{
 .jumbotron{
     background-image:url("./images/city1.jpg");
     background-repeat: no-repeat;
-    background-size: 100%;
+    background-size: cover;
     height: auto;
     font-family: 'Neucha', cursive;
  } 
@@ -129,3 +129,49 @@ h3{
 .deleteOrder {
     float: left;
 }
+
+@media screen and (max-width: 1190px){
+
+     #mainPic{
+        width: 100%;
+    } 
+}
+@media screen and (max-width: 795px){
+
+    #ramenTitle{
+        text-shadow:1px 1px black;
+    }
+    #menuHeader{
+        width: 105%;
+    }
+}
+@media screen and (max-width: 640px){
+
+    #menuHeader{
+        width: 105%;
+    }
+    .form-inline{
+        margin-left: auto;
+        margin-right: auto;
+        display: block;
+    }
+    #ramenTitle{
+        text-shadow: 3px 3px black;
+        margin-right: 30px;
+    }
+    .lead {
+        float: none;
+        text-align: center;
+        margin-left: 10px;
+        text-shadow: 2px 2px black;
+    }
+
+    .lead2{
+        float: none;
+        text-align: center;
+        margin-left: 10px;
+        text-shadow: 2px 2px black;
+    }
+
+}
+
