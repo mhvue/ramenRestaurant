@@ -95,7 +95,7 @@ $(".orderBtn").on("click", function () {
         "<button class='deleteOrder'+ id ='deleteBtn" + getInfo +"'>" + "X</button>");
 
     priceArr.push(parseFloat(getPrice));
-
+        console.log(priceArr)
 //credit below to https://www.tutorialrepublic.com/faq/how-to-find-the-sum-of-an-array-of-numbers-in-javascript.php
     total = priceArr.reduce(function(a, b){
         return a + b;
@@ -107,11 +107,21 @@ $(".orderBtn").on("click", function () {
     //include option to clear the order  and/or delete an item 
     $("#deleteBtn" + getInfo).on("click", function(){
         $("br").remove();
-        $("#selectedItem" + getInfo, ).remove();
+        $("#selectedItem" + getInfo ).remove();
         $("#deleteBtn" + getInfo).remove();
         $("#totalHere").html("Total: ");
-        priceArr = []
+
+        
         //add in the new total after deleting an item
+        //need to take out of arry
+        for(let i = 0; i < priceArr.length; i ++){
+            console.log(priceArr[i])
+            if($("#selectedItem" + getInfo) == priceArr[i]){
+                //loop through and find that first value with those interger(price) and delete it
+                console.log(priceArr[i])
+            }
+        }
+    
     })
 });
 
