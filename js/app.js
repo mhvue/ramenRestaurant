@@ -89,14 +89,10 @@ let total;
 $(".orderBtn").on("click", function () {
     const getInfo = $(this).attr("id");
     const getPrice= $(this).parent().parent().find("p").text();
-
-    $(".modal-body").append(
-        "<span id='selectedItem" + getInfo + "'" + ">" + "<br>" +"#" + getInfo + "-" + getPrice).append( 
-        "<button class='deleteOrder' id ='deleteBtn" + getInfo +"'>" + "X</button>");
         
-    // $(".modal-body").append(
-    //     "<span id='selectedItem" + getInfo + "'" + ">" + "<br>" +"#" + getInfo + "-" + getPrice, 
-    //     "<button class='deleteOrder'+ id ='deleteBtn" + getInfo +"'>" + "X</button>");
+    $(".modal-body").append("<br class='break'>").append(
+        "<span id='selectedItem" + getInfo + "'" + ">" + "<br>" +"#" + getInfo + "-" + getPrice, 
+        "<button class='deleteOrder'+ id ='deleteBtn" + getInfo +"'>" + "X</button>");
 
     priceArr.push(parseFloat(getPrice));
 
@@ -108,16 +104,14 @@ $(".orderBtn").on("click", function () {
     $("#totalHere").html("Total: " + total);
     $("#orderModal").modal("toggle");
 
-    //include option to clear the order  and/or delete an item ---still in progress---
+    //include option to clear the order  and/or delete an item 
     $("#deleteBtn" + getInfo).on("click", function(){
-        console.log($(this))
-       // $("#"+getInfo).remove();
-
-         $("#selectedItem" + getInfo).remove();
-      // $("#selectedItem" + getInfo).remove("#break");
+        $("br").remove();
+        $("#selectedItem" + getInfo, ).remove();
         $("#deleteBtn" + getInfo).remove();
         $("#totalHere").html("Total: ");
         priceArr = []
+        //add in the new total after deleting an item
     })
 });
 
