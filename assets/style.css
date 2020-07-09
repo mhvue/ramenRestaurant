@@ -2,8 +2,6 @@ body{
     background-image: url("./images/ramenBackground.jpg");
      background-attachment: fixed; 
      background-size: 50%;
-     /* background-repeat: no-repeat; */
-     /* background-color: #183556;  */
 }
 
 footer{
@@ -49,7 +47,7 @@ h2{
     margin-bottom: 20px;
     font-family: 'Ubuntu', sans-serif;
 }
-.homeBtn, .contactBtn, .orderNav {
+.homeBtn, .contactBtn, .orderNav, .cartNav {
     color: white;
     border: 1px solid white;
 }
@@ -62,7 +60,7 @@ a:hover {
     color: black;
     text-decoration: none;
 }
-.homeBtn:hover, .contactBtn:hover, .orderNav:hover{
+.homeBtn:hover, .contactBtn:hover, .orderNav:hover, .cartNav:hover{
     background-color: #e77a25;
     color: black;
 }

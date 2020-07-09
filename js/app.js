@@ -1,7 +1,6 @@
-//contact modal 
+//contact modal from index.html
 $("#contactBtn").on("click", function () {
     $("#contactModal").modal("toggle");
-
 });
 
 
@@ -86,42 +85,49 @@ for (let i = 0; i < 7; i++) {
 
 let priceArr = []
 let total;
+
+//view cart
+$(".cartNav").on("click", function () {
+    $("#orderModal").modal("toggle");
+});
+
+//adding order to cart 
 $(".orderBtn").on("click", function () {
     const getInfo = $(this).attr("id");
     const getPrice= $(this).parent().parent().find("p").text();
-        
+ 
     $(".modal-body").append("<br class='break'>").append(
         "<span id='selectedItem" + getInfo + "'" + ">" + "<br>" +"#" + getInfo + "-" + getPrice, 
         "<button class='deleteOrder'+ id ='deleteBtn" + getInfo +"'>" + "X</button>");
 
     priceArr.push(parseFloat(getPrice));
-        console.log(priceArr)
+        
 //credit below to https://www.tutorialrepublic.com/faq/how-to-find-the-sum-of-an-array-of-numbers-in-javascript.php
-    total = priceArr.reduce(function(a, b){
+    total =  priceArr.reduce(function(a, b){
         return a + b;
     },0);
 
     $("#totalHere").html("Total: " + total);
     $("#orderModal").modal("toggle");
 
-    //include option to clear the order  and/or delete an item 
+    //delete an item from cart
     $("#deleteBtn" + getInfo).on("click", function(){
-        $("br").remove();
-        $("#selectedItem" + getInfo ).remove();
+        $("br, #selectedItem" + getInfo).remove();
         $("#deleteBtn" + getInfo).remove();
-        $("#totalHere").html("Total: ");
-
-        
-        //add in the new total after deleting an item
-        //need to take out of arry
+    
+        //add in the NEW total after deleting an item from order so need to loop through array 
         for(let i = 0; i < priceArr.length; i ++){
-            console.log(priceArr[i])
-            if($("#selectedItem" + getInfo) == priceArr[i]){
-                //loop through and find that first value with those interger(price) and delete it
-                console.log(priceArr[i])
+            if(getPrice == priceArr[i]){
+                //need to take that element that is deleted out of array, find that element by index
+                priceArr.splice([i],[i+1])
             }
         }
-    
+
+        total = priceArr.reduce(function(a, b){
+            return a + b;
+        },0);
+
+        $("#totalHere").html("Total: " + total);
     })
 });
 
