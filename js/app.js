@@ -89,12 +89,18 @@ let total;
 //view cart
 $(".cartNav").on("click", function () {
     $("#orderModal").modal("toggle");
+    if(priceArr.length === 0){
+        $(".modal-body").append("<p id='nothingMsg'>Nothing added yet")
+    }else{
+        $("#nothingMsg").remove();
+    }
 });
 
 //adding order to cart 
 $(".orderBtn").on("click", function () {
     const getInfo = $(this).attr("id");
     const getPrice= $(this).parent().parent().find("p").text();
+    $("#nothingMsg").remove();
  
     $(".modal-body").append("<br class='break'>").append(
         "<span id='selectedItem" + getInfo + "'" + ">" + "<br>" +"#" + getInfo + "-" + getPrice, 
@@ -119,6 +125,7 @@ $(".orderBtn").on("click", function () {
         for(let i = 0; i < priceArr.length; i ++){
             if(getPrice == priceArr[i]){
                 //need to take that element that is deleted out of array, find that element by index
+                console.log("matched val deleted" + priceArr[i], [i])
                 priceArr.splice([i],[i+1])
             }
         }
