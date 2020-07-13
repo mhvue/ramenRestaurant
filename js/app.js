@@ -101,10 +101,12 @@ $(".orderBtn").on("click", function () {
     const getInfo = $(this).attr("id");
     const getPrice= $(this).parent().parent().find("p").text();
     $("#nothingMsg").remove();
+
+    var orderBlock = $("<p><span class='selectedItem" + getInfo + "'" + ">" + "<br>" +"#" + getInfo + "-" + getPrice + 
+        "<button class='deleteOrder'>X</button></p>");
  
-    $(".modal-body").append("<br class='break'>").append(
-        "<span id='selectedItem" + getInfo + "'" + ">" + "<br>" +"#" + getInfo + "-" + getPrice, 
-        "<button class='deleteOrder'+ id ='deleteBtn" + getInfo +"'>" + "X</button>");
+
+    $(".modal-body").append(orderBlock);
 
     priceArr.push(parseFloat(getPrice));
         
@@ -117,9 +119,9 @@ $(".orderBtn").on("click", function () {
     $("#orderModal").modal("toggle");
 
     //delete an item from cart
-    $("#deleteBtn" + getInfo).on("click", function(){
-        $("br, #selectedItem" + getInfo).remove();
-        $("#deleteBtn" + getInfo).remove();
+    orderBlock.on("click", ".deleteOrder", function(){
+        var $this = $(this);
+        $this.parent().remove();
     
         //add in the NEW total after deleting an item from order so need to loop through array 
         for(let i = 0; i < priceArr.length; i ++){
