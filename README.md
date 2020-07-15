@@ -9,12 +9,11 @@
 ## Table of Contents
 * [How it works](#how-it-works)
     * [Home](#home)
-    * [Contact] (#contact)
+    * [Contact](#contact)
     * [Order](#order)
 * [Technologies](#technologies)
 * [Inspiration](#inspiration)
 * [Contributors](#contributors)
-* [Status](#status)
 
 ## How It Works:
 
