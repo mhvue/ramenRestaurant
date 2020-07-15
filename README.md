@@ -13,14 +13,14 @@
     * [Order](#order)
 * [Technologies](#technologies)
 * [Inspiration](#inspiration)
-* [Contributors](#contributors)
+
 
 ## How It Works:
 
 ### Home 
 Users will first see the About and Why Ramen sections 
 <p align="center">
-<img src= "assets/images/homePage.png" width = "400"></p>
+<img src= "assets/images/homePage.png"></p>
 
 There are navigation buttons in the upper left hand.
 <p align="center">
@@ -32,15 +32,15 @@ Need to contact the restaurant? Just clicked Contact button and the contact info
 <img src= "assets/images/contactInfo.png" width = "400"></p>
 
 ### Order
-When Order button is clicked, users are directed to page to order off the menu.
+When Order button is clicked, users are directed to page to order off the Menu.
 <p align="center">
-<img src= "assets/images/menu.png" width = "400"></p>
+<img src= "assets/images/menu.png"></p>
 
-When clicking on Order button, that item number (noted as #) and price will be added to cart on modal. A total is calculated.
+When clicking on Order button, that item number (noted as #) and price will be added to modal. A total is calculated.
 <p align="center">
 <img src= "assets/images/orderModal.png" width = "400"></p>
 
-An item can be deleted from cart and the total is updated. 
+An item can be deleted by clicking on X button. The total is updated as well. 
 <p align="center">
 <img src= "assets/images/removeItemModal.png" width = "400"></p>
 
@@ -53,5 +53,5 @@ Project is created with:
 
 
 ## Inspirtation 
-In today's busy world and during quarantine, we are ordering food all the time. I've always been curious on how to create such a websites to see how it works. This was fun  build and I'm continously thinking of to make this website more user-friendly and creative.
+In today's busy world and during quarantine, we are ordering food all the time. I've always been curious on how to create such a websites to see how it works. This was fun to build and I'm continously thinking of to make this website more user-friendly and creative.
 
