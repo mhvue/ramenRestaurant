@@ -50,6 +50,7 @@ Project is created with:
 * HTML
 * jQuery
 * CSS
+* Bootstrap
 
 
 ## Inspirtation 
