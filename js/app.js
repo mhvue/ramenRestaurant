@@ -128,7 +128,7 @@ $(".orderBtn").on("click", function () {
             if(getPrice == priceArr[i]){
                 //need to take that element that is deleted out of array, find that element by index
                 console.log("matched val deleted" + priceArr[i], [i])
-                priceArr.splice([i],[i+1])
+                priceArr.splice([i],1)
             }
         }
 
@@ -137,6 +137,7 @@ $(".orderBtn").on("click", function () {
         },0);
 
         $("#totalHere").html("Total: " + total);
+        console.log(total)
     })
 });
 
