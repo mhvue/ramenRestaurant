@@ -90,7 +90,7 @@ let total;
 $(".cartNav").on("click", function () {
     $("#orderModal").modal("toggle");
     if(priceArr.length === 0){
-        $(".modal-body").append("<p id='nothingMsg'>Nothing added yet")
+        $(".modal-body").html("<p id='nothingMsg'>Nothing added yet");
     }else{
         $("#nothingMsg").remove();
     }
